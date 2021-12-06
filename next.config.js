@@ -39,6 +39,9 @@ module.exports = ({
                         "@module-federation/nextjs-mf/lib/noop": {
                             eager: false,
                         },
+                        "create-react-class":{
+                            eager:true
+                        },
                         react: {
                             singleton: true,
                             eager: true,

@@ -9,7 +9,6 @@ class Index extends React.Component {
             {ssr: false}
         )
 
-
         return (
             <>
                 <Restaurant/>
