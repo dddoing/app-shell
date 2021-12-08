@@ -1,20 +1,24 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
 import {withRouter} from "next/router";
+import Document from "next/document";
+
+export async function getInitialProps(ctx) {
+   const initialProps = await Document.getInitialProps(ctx);
+   return { ...initialProps };
+}
 
 class Index extends React.Component {
     //
     render() {
         //
-        const RestaurantDetail = dynamic(() => import('Restaurant/Detail'),
-            {ssr: false}
-        )
+
         return (
             <>
-                <RestaurantDetail/>
+                <div>sss</div>
             </>
         )
     }
 }
+
 
 export default withRouter(Index);

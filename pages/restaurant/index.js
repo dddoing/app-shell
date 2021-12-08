@@ -1,5 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
+import {withRouter} from "next/router";
 
 class Index extends React.Component {
     //
@@ -17,4 +18,4 @@ class Index extends React.Component {
     }
 }
 
-export default Index;
+export default withRouter(Index);
