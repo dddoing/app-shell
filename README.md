@@ -1,1 +1,9 @@
-# app-shell
+# micro-frontend
+----------------------
+> react
+> 
+> typescript
+> 
+> mobx
+>
+> next

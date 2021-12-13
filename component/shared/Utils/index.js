@@ -1,1 +1,0 @@
-export {dynamicFederation,dynamicFederationModule} from './dynamicfedeartion'
