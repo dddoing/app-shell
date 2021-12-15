@@ -9,9 +9,6 @@ class MyDocument extends Document {
                 <script
                     src="http://localhost:3001/remoteEntry.js"
                 />
-                <script
-                    src="http://localhost:3003/remoteEntry.js"
-                />
                 <Main />
                 <NextScript />
                 </body>

@@ -1,6 +1,7 @@
 import React from 'react';
+import {AppProps} from 'next/app';
 
-class App extends React.Component {
+class App extends React.Component<AppProps> {
     //
     render() {
         //
