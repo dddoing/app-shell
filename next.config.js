@@ -24,7 +24,6 @@ module.exports = ({
             console.log(isServer)
             Object.assign(config.resolve.alias, {
                 Restaurant: false,
-                Navigation: false,
             });
         } else {
             console.log(isServer)
@@ -34,7 +33,6 @@ module.exports = ({
                     remoteType: "var",
                     remotes: {
                         Restaurant: "Restaurant",
-                        Navigation: "Navigation"
                     },
                     shared: {
                         ...deps,
@@ -51,6 +49,7 @@ module.exports = ({
                             eager: true,
                             requiredVersion: false,
                         },
+                        "@material-ui/core": {singleton: true, requiredVersion: deps["@material-ui/core"].version, eager: true},
                     },
                 })
             );
